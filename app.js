@@ -17,9 +17,9 @@ function verificarIntento(){
     } else{
         //El usuario no acertó
         if(numeroDeUsuario>numeroSecreto){
-            asignarTextoElemento('p',`El número secreto es menor, ${intentos} ${intentos==1 ? 'intento' : 'intentos'}`);
+            asignarTextoElemento('p',`El número secreto es menor,\n ${intentos} ${intentos==1 ? 'intento' : 'intentos'}`);
         } else{
-            asignarTextoElemento('p',`El número secreto es mayor, ${intentos} ${intentos==1 ? 'intento' : 'intentos'}`);
+            asignarTextoElemento('p',`El número secreto es mayor,\n ${intentos} ${intentos==1 ? 'intento' : 'intentos'}`);
         }
         intentos++;
         limpiarCaja();
